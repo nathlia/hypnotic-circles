@@ -1,0 +1,25 @@
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px; /* Adjust as needed */
+}
+
+.one {
+  background-color: magenta;
+}
+
+.two {
+  background-color: #9b4aca; /* Purple color */
+}
+
+.three {
+  background-color: cyan;
+}
