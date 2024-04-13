@@ -1,3 +1,9 @@
+:root {
+  --circle-one: #dd89f6; 
+  --circle-two: #4941e8;
+  --circle-three: #85e3ff;
+}
+
 *{
   overflow: hidden;
   margin: 0;
@@ -6,6 +12,22 @@
 
 body {
   background: black; /* Remove background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset margin and padding for the body and HTML elements */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure body takes up full height */
+}
+
+/* Ensure Angular components fill the entire viewport */
+app-root, .circle-container {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .circle {
@@ -19,13 +41,13 @@ body {
 }
 
 .one {
-  background-color: magenta;
+  background-color: var(--circle-one, #dd89f6);
 }
 
 .two {
-  background-color: #a832ed; /* Purple color */
+  background-color: var(--circle-two, #4941e8);
 }
 
 .three {
-  background-color: cyan;
+  background-color: var(--circle-three, #85e3ff);
 }

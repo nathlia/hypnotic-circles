@@ -13,13 +13,26 @@
 }
 
 .one {
-  background-color: magenta;
+  background-color: var(--circle-one, #dd89f6);;
 }
 
 .two {
-  background-color: #9b4aca; /* Purple color */
+  background-color: var(--circle-two, #4941e8);; /* Purple color */
 }
 
 .three {
-  background-color: cyan;
+  background-color: var(--circle-three, #85e3ff);;
+}
+
+.circle-group .disappear {
+  animation: disappearAnimation 2s forwards;
+}
+
+@keyframes disappearAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
