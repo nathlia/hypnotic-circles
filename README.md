@@ -1,5 +1,5 @@
 # Banner Countdown
-[Aventurine](src\assets\img\aven.png)
+![Aventurine](src\assets\img\aven.png)
 
 Made this for fun while waiting for Aventurine's banner, might use for other characters in the future, probably on another branch
 
