@@ -44,7 +44,7 @@ export class AppComponent implements  AfterViewInit {
       // After the animation duration, remove the first group
       setTimeout(() => {
         container.removeChild(firstGroup);
-      }, 1000); // Adjust the animation duration (in milliseconds)
+      }, 2000); // Adjust the animation duration (in milliseconds)
     }
   }
 
