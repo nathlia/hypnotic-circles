@@ -4,12 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "hypnotic-circles": {
-      "i18n": {
-        "sourceLocale": "pt",
-        "locales": {
-          "en": "src/locale/messages.en.xlf"
-        }
-      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize": ["en"],
             "outputPath": "dist/hypnotic-circles",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -42,14 +35,6 @@
             "scripts": []
           },
           "configurations": {
-            "en": {
-              "localize": ["en"],
-              "aot": true
-            },
-            "pt": {
-              "localize": ["pt"],
-              "aot": true
-            },
             "production": {
               "budgets": [
                 {
@@ -79,12 +64,6 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "pt":{
-              "browserTarget": "hypnotic-circles:build:pt"
-            },
-            "en": {
-              "browserTarget": "hypnotic-circles:build:en"
-            },
             "production": {
               "browserTarget": "hypnotic-circles:build:production"
             },
@@ -93,13 +72,6 @@
             }
           },
           "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "hypnotic-circles:build",
-            "outputPath": "src/locale"
-          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
